@@ -1,0 +1,13 @@
+{
+  "name": "venue5-z",
+  "version": "1.0.0",
+  "description": "Premium Event Spaces Venue Booking Platform",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node -e \"require('http').createServer((q,s)=>s.end(require('fs').readFileSync('index.html'))).listen(3000, ()=>console.log('http://localhost:3000'))\"",
+    "start": "npm run build && npm run dev"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
